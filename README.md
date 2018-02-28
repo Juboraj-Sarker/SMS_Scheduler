@@ -1,0 +1,2 @@
+# SMS_Scheduler
+SMS Scheduler is a full free android application which will help you to schedule a sms to send it later. If you want everything will be done on time and you want to do it with the app then you are in right place. SMS Scheduler will be your lover. SMS Scheduler will send sms to your choice schedule. You just have to give input like #Schedule Date, #Schedule Time, #Receiver contact number, Your desire message. SMS Scheduler will store all the data to its local database. And it will send sms to your desire person with the schedule period.

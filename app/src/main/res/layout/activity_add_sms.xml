@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#546E7A"
+            android:padding="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select schedule TIME"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:textColor="#ea252424"/>
+
+                <TimePicker
+                    android:id="@+id/form_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:timePickerMode="spinner" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select schedule TYPE"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:textColor="#ea252424"/>
+
+
+                <Spinner
+                    android:id="@+id/form_recurring_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/schedule_date_LAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select schedule DATE"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:textColor="#ea252424"/>
+
+                <DatePicker
+                    android:id="@+id/form_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/schedule_monthNo_LAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+
+                <TextView
+                    android:id="@+id/weekly_monthly_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select day of month"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:textColor="#ea252424"/>
+
+                <Spinner
+                    android:id="@+id/form_recurring_day"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/schedule_month_name_LAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select month of YEAR"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:textColor="#ea252424"/>
+
+                <Spinner
+                    android:id="@+id/form_recurring_month"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Select Sim Card"
+                    android:textColor="#ea252424"
+                    android:textSize="16sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/form_sim_card"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="8dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_sim1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="SIM 1"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_sim2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIM 2"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ECEFF1"
+                android:layout_margin="5dp"
+                android:elevation="1dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter sms and number"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:textColor="#ea252424"/>
+
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/form_input_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/form_hint_contact"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_text_design"/>
+
+                <EditText
+                    android:id="@+id/form_input_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:hint="@string/form_hint_message"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_text_design" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_button_cancel"
+                    android:id="@+id/button_cancel"
+                    android:onClick="unscheduleSms"
+                    android:visibility="gone"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/form_button_add"
+                    android:id="@+id/button_add"
+                    android:onClick="scheduleSms"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+

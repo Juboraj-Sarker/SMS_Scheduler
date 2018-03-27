@@ -34,6 +34,16 @@
             android:layout_height="65dp"
             android:orientation="horizontal">
 
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                android:layout_centerInParent="true"
+                ads:adUnitId="@string/banner_home_footer_1">
+            </com.google.android.gms.ads.AdView>
+
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/fab_add"
                 android:layout_width="wrap_content"

@@ -16,7 +16,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 import com.juborajsarker.smsscheduler.R;
 import com.juborajsarker.smsscheduler.activity.AddSmsActivity;
 import com.juborajsarker.smsscheduler.activity.DetailsActivity;
@@ -65,6 +67,12 @@ public class SentFragment extends Fragment  {
 
 
         view = inflater.inflate(R.layout.fragment_sent, container, false);
+
+
+        MobileAds.initialize(getActivity().getApplicationContext(), getString(R.string.banner_home_footer_1));
+        AdView mAdView = (AdView) view.findViewById(R.id.adView1);
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("93448558CC721EBAD8FAAE5DA52596D3").build();
+        mAdView.loadAd(adRequest);
 
 
         fab = (FloatingActionButton) view.findViewById(R.id.fab_add);

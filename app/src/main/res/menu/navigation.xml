@@ -4,16 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-
-
-
     <item
         android:id="@+id/navigation_pending"
         android:icon="@drawable/ic_pending"
         android:title="Pending SMS"
         app:showAsAction="withText"/>
-
-
 
 
     <item
@@ -29,6 +24,11 @@
         app:showAsAction="withText"/>
 
 
+    <item
+        android:id="@+id/navigation_remove_ads"
+        android:icon="@drawable/ic_remove_ads"
+        android:title="Remove Ads"
+        app:showAsAction="withText"/>
 
 
 

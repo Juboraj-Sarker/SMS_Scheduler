@@ -51,7 +51,9 @@ public class AboutActivity extends AppCompatActivity {
         });
 
 
-        startActivity(new Intent(AboutActivity.this, WebviewActivity.class));
+        Intent intent = new Intent(AboutActivity.this, WebviewActivity.class);
+        intent.putExtra("url", "https://www.juborajsarker.com");
+        startActivity(intent);
 
     }
 

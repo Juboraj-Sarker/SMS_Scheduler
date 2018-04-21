@@ -3,35 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="55dp"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context="com.juborajsarker.smsscheduler.fragment.SentFragment">
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_below="@id/toolbar">
-
-
-
-
-        <ListView
+    <ListView
             android:id="@+id/sent_LV"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6">
+            android:layout_weight="1">
 
-        </ListView>
+    </ListView>
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
 
@@ -47,7 +35,7 @@
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/fab_add"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:src="@drawable/ic_add"
                 android:tint="@color/textColorPrimary"
@@ -56,11 +44,12 @@
                 android:layout_alignParentRight="true"
                 android:background="@color/colorPrimary"
                 app:backgroundTint="@color/colorPrimaryDark"
-                app:fabSize="normal"/>
+                app:fabSize="normal"
+                android:layout_alignParentEnd="true" />
 
 
         </RelativeLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+

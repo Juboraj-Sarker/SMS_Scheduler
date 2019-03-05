@@ -330,4 +330,6 @@ public class HomeActivity extends AppCompatActivity {
         intent.addFlags(flags);
         return intent;
     }
+
+
 }

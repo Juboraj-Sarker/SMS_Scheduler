@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "805508346803",
+    "firebase_url": "https://sms-scheduler-bd.firebaseio.com",
+    "project_id": "sms-scheduler-bd",
+    "storage_bucket": "sms-scheduler-bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805508346803:android:7f39a83f6bdd3062",
+        "android_client_info": {
+          "package_name": "com.juborajsarker.smsscheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805508346803-jqlrb3c2kjhbsdsnb2qrvn5bqg0cou86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juborajsarker.smsscheduler",
+            "certificate_hash": "63c809115ca3e2a5917bfa164acde72d57b1f485"
+          }
+        },
+        {
+          "client_id": "805508346803-maqs70eblc2595i0gc5vju83kr5h6vca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT7uWecrDnkuNv7pLIyIx3uto8enJ83r0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805508346803-maqs70eblc2595i0gc5vju83kr5h6vca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

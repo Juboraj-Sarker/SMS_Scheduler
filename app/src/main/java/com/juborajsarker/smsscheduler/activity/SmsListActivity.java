@@ -240,4 +240,7 @@ public class SmsListActivity extends ListActivity {
         intent.addFlags(flags);
         return intent;
     }
+
+
+
 }

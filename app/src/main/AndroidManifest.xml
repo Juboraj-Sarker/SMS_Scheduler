@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.juborajsarker.smsscheduler"
-    android:versionCode="5"
-    android:versionName="5.0">
-
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="26" />
+    android:versionCode="7"
+    android:versionName="7.0.1">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -22,7 +18,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-
         <activity
             android:name=".activity.SmsListActivity"
             android:launchMode="singleTop" />
@@ -30,16 +25,17 @@
             android:name=".activity.AddSmsActivity"
             android:label="Add New Schedule"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.SmsSchedulerPreferenceActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SmsSchedulerPreferenceActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.AboutActivity"
             android:label="About"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.WebviewActivity"
             android:label="Juboraj Sarker"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <receiver
             android:name=".receiver.BootReceiver"
@@ -59,25 +55,20 @@
         <service android:name=".service.SmsDeliveredService" />
         <service android:name=".service.UnscheduleService" />
 
-        <activity android:name=".activity.HomeActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.DetailsActivity"
             android:label="SMS Details"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-
-
-        <activity android:name=".activity.SplashActivity"
+        <activity
+            android:name=".activity.SplashActivity"
             android:screenOrientation="portrait">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -85,10 +76,9 @@
             </intent-filter>
         </activity>
 
-
-        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
-            android:value="false"/>
-
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
     </application>
 
 </manifest>

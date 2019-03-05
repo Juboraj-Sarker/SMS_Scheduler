@@ -14,10 +14,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.juborajsarker.smsscheduler.R;
 import com.juborajsarker.smsscheduler.activity.AddSmsActivity;
@@ -34,7 +32,7 @@ import java.util.GregorianCalendar;
 
 public class SentFragment extends Fragment  {
 
-    InterstitialAd mInterstitialAd;
+    //InterstitialAd mInterstitialAd;
 
     View view;
 
@@ -85,19 +83,19 @@ public class SentFragment extends Fragment  {
                 progressDialog.setCancelable(false);
                 progressDialog.show();
 
-                mInterstitialAd = new InterstitialAd(getContext());
-                mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen1));
-
-                AdRequest adRequest = new AdRequest.Builder().build();
-                mInterstitialAd.loadAd(adRequest);
-
-
-
-                mInterstitialAd.setAdListener(new AdListener() {
-                    public void onAdLoaded() {
-                        showInterstitial();
-                    }
-                });
+//                mInterstitialAd = new InterstitialAd(getContext());
+//                mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen1));
+//
+//                AdRequest adRequest = new AdRequest.Builder().build();
+//                mInterstitialAd.loadAd(adRequest);
+//
+//
+//
+//                mInterstitialAd.setAdListener(new AdListener() {
+//                    public void onAdLoaded() {
+//                        showInterstitial();
+//                    }
+//                });
 
                 progressDialog.dismiss();
                 startActivity(new Intent(getContext(), AddSmsActivity.class));
@@ -235,10 +233,10 @@ public class SentFragment extends Fragment  {
 
 
 
-    private void showInterstitial() {
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
-    }
+//    private void showInterstitial() {
+//        if (mInterstitialAd.isLoaded()) {
+//            mInterstitialAd.show();
+//        }
+//    }
 
 }
